@@ -15,7 +15,3 @@ document.addEventListener("DOMContentLoaded", function() {
     closeButton.addEventListener("click", toggleSidebar);
     overlay.addEventListener("click", toggleSidebar);
 });
-
-function creatPurchase(){
-    const button = getElementById("")
-}
