@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    background-image: linear-gradient(to right, #00A9FF, #5bbef0);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to right, #00A9FF, #5bbef0);
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+}
+
+.logo {
+    height: 80px; 
+    margin-left: 70px;
+}
+
+.menu-button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 30px;
+    left: 20px;
+}
+
+.infoUser {
+    background-color: #89CFF3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.144);
+    border-radius: 5px;
+}
+
+
+.left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #00A9FF;
+}
+
+.ValuesInfoUser {
+    color: white;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #CDF5FD;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    height: 740px;
+}
+
+.navbutton {
+    width: 100px;
+    height: 50px;
+    background-color: #89CFF3;
+    text-align: center;
+    border: 2px solid #89CFF3;
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.24);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.navbutton:hover {
+    transform: scale(1.05);
+    background-color: #00A9FF;
+}
+
+footer {
+    background-color: #00A9FF;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #00A9FF;
+    padding: 60px 20px 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 15;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+.sidebar.open {
+    display: block;
+    transform: translateX(0);
+}
+
+.sidebar-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.overlay.show {
+    display: block;
+}
+
+@media screen and (min-width: 769px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-left: 65px;
+        text-align: left;
+    }
+
+    .infoUser {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .left-section, .right-section {
+        align-items: flex-start;
+    }
+
+    .menu-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .infoUser {
+        padding: 10px;
+        flex-direction: column; /* Alterado para empilhar os elementos */
+        align-items: flex-start; /* Alterado para alinhar os itens à esquerda */
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .navbutton {
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
