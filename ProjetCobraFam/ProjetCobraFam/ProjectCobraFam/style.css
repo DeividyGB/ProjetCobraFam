@@ -4,6 +4,9 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #73F5B5;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -84,6 +87,15 @@ h1 {
     }
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+
 .navbutton {
     width: 100px;
     height: 50px;
@@ -95,11 +107,11 @@ h1 {
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .infoUser {
     color: #ffffff;
-    text-align: center;
     background-color: #1d9358;
     margin: 0;
     padding: 20px 10px;
@@ -107,6 +119,58 @@ h1 {
     font-weight: 800;
     font-size: 20px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section {
+    align-items: flex-end;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .infoUser {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-section, .right-section {
+        align-items: center;
+    }
+    
+    .right-section {
+        margin-top: 20px;
+    }
+    
+    .info-item {
+        margin-bottom: 5px;
+        
+    }
+    
+    .info-label {
+        text-align: center;
+    }
+    
+    .Username, .valuedebts, .Intervaldebts, .displayed {
+        text-align: center;
+       
+    }
+}
+
+.ValuesInfoUser{
+    color: #8fefbf;
 }

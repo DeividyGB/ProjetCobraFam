@@ -15,3 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
     closeButton.addEventListener("click", toggleSidebar);
     overlay.addEventListener("click", toggleSidebar);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let div = document.createElement("div");
+    div.style = "Bababoe";
+    
+})
+
