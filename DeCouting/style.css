@@ -1,18 +1,17 @@
-/* Core Styles */
 :root {
-    --color-primary: #2d6a4f; /* Verde escuro */
-    --color-secondary: #40916c; /* Verde médio */
-    --color-light: #d9f7e3; /* Verde claro */
-    --color-dark: #1b4332; /* Verde muito escuro */
-    --color-white: #ffffff; /* Branco */
-    --color-overlay: rgba(0, 0, 0, 0.5); /* Preto translúcido */
-    --color-modal-bg: #f0fff4; /* Fundo do modal em verde muito claro */
-    --color-entry-bg: #f0f4f8; /* Fundo das entradas em cinza claro */
-    --color-entry-border: #b4d3c2; /* Borda das entradas em verde médio */
-    --color-error: #d9534f; /* Vermelho para erros */
-    --color-error-hover: #c9302c; /* Vermelho escuro para hover em erros */
-    --color-submit-hover: #264653; /* Azul escuro para hover em botões de envio */
-    --color-font: #073b4c; /* Azul muito escuro para texto */
+    --color-primary: #2d6a4f;
+    --color-secondary: #40916c;
+    --color-light: #d9f7e3;
+    --color-dark: #1b4332;
+    --color-white: #ffffff;
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-modal-bg: #f0fff4;
+    --color-entry-bg: #f0f4f8;
+    --color-entry-border: #b4d3c2;
+    --color-error: #d9534f;
+    --color-error-hover: #c9302c;
+    --color-submit-hover: #264653;
+    --color-font: #073b4c;
     --font-family-primary: 'Josefin Sans', Arial, sans-serif;
     --font-family-secondary: Arial, sans-serif;
 }
@@ -28,7 +27,6 @@ body {
     flex-direction: column;
 }
 
-/* Header */
 header {
     background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     color: var(--color-white);
@@ -52,7 +50,6 @@ header {
     margin-left: 10px;
 }
 
-/* User Info */
 .infoUser {
     background-color: var(--color-light);
     padding: 20px;
@@ -93,18 +90,16 @@ header {
     font-weight: 600;
 }
 
-/* Main Content */
 main {
     flex: 1;
     margin: 20px;
     padding: 20px;
-    background-color: var(--color-entry-bg);
+    background-color: var(--color-light);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
 }
 
-/* Entry Card Styles */
 .entry {
     background-color: var(--color-light);
     border-left: 5px solid var(--color-primary);
@@ -132,7 +127,6 @@ main {
     margin: 5px 0;
 }
 
-/* Button Styles */
 .navbutton {
     position: fixed;
     bottom: 20px;
@@ -152,7 +146,6 @@ main {
     background-color: var(--color-secondary);
 }
 
-/* Footer */
 footer {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -160,7 +153,6 @@ footer {
     text-align: center;
 }
 
-/* Sidebar */
 .sidebar {
     display: none;
     position: fixed;
@@ -201,7 +193,6 @@ footer {
     color: var(--color-white);
 }
 
-/* Overlay */
 .overlay {
     display: none;
     position: fixed;
@@ -217,7 +208,6 @@ footer {
     display: block;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -279,7 +269,6 @@ footer {
     color: var(--color-dark);
 }
 
-/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -332,11 +321,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--color-submit-hover);
-}
-
-#noEntriesText {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: var(--color-dark);
 }
