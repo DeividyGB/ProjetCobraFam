@@ -1,18 +1,18 @@
 /* Core Styles */
 :root {
-    --color-primary: #00A9FF;
-    --color-secondary: #5bbef0;
-    --color-light: #89CFF3;
-    --color-dark: #333;
-    --color-white: #ffffff;
-    --color-overlay: rgba(0, 0, 0, 0.5);
-    --color-modal-bg: #bdf2fd;
-    --color-entry-bg: #e7f3ff;
-    --color-entry-border: #2196F3;
-    --color-error: #ff4d4d;
-    --color-error-hover: #ff1a1a;
-    --color-submit-hover: #007bb5;
-    --color-font: #004080; /* Azul mais visível */
+    --color-primary: #2d6a4f; /* Verde escuro */
+    --color-secondary: #40916c; /* Verde médio */
+    --color-light: #d9f7e3; /* Verde claro */
+    --color-dark: #1b4332; /* Verde muito escuro */
+    --color-white: #ffffff; /* Branco */
+    --color-overlay: rgba(0, 0, 0, 0.5); /* Preto translúcido */
+    --color-modal-bg: #f0fff4; /* Fundo do modal em verde muito claro */
+    --color-entry-bg: #f0f4f8; /* Fundo das entradas em cinza claro */
+    --color-entry-border: #b4d3c2; /* Borda das entradas em verde médio */
+    --color-error: #d9534f; /* Vermelho para erros */
+    --color-error-hover: #c9302c; /* Vermelho escuro para hover em erros */
+    --color-submit-hover: #264653; /* Azul escuro para hover em botões de envio */
+    --color-font: #073b4c; /* Azul muito escuro para texto */
     --font-family-primary: 'Josefin Sans', Arial, sans-serif;
     --font-family-secondary: Arial, sans-serif;
 }
@@ -89,7 +89,7 @@ header {
 }
 
 .ValuesInfoUser {
-    color: var(--color-white);
+    color: var(--color-dark);
     font-weight: 600;
 }
 
@@ -257,7 +257,6 @@ footer {
     }
 }
 
-
 .modal {
     display: none;
     position: fixed;
@@ -333,4 +332,11 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--color-submit-hover);
+}
+
+#noEntriesText {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--color-dark);
 }
