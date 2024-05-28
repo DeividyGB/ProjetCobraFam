@@ -1,0 +1,119 @@
+:root {
+    --color-primary: #2d6a4f;
+    --color-secondary: #40916c;
+    --color-light: #d9f7e3;
+    --color-dark: #1b4332;
+    --color-white: #ffffff;
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-modal-bg: #f0fff4;
+    --color-entry-bg: #f0f4f8;
+    --color-entry-border: #b4d3c2;
+    --color-error: #d9534f;
+    --color-error-hover: #c9302c;
+    --color-submit-hover: #264653;
+    --color-font: #073b4c;
+    --font-family-primary: 'Josefin Sans', Arial, sans-serif;
+    --font-family-secondary: Arial, sans-serif;
+}
+body {
+    font-family: var(--font-family-primary);
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    margin: 0;
+    color: var(--color-font);
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin-left: 10px;
+}
+
+.menu-button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-white);
+    margin-left: 10px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color-light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: var(--color-primary);
+}
+
+#partnerFormSection, #partnerListSection {
+    background-color: var(--color-modal-bg);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#partnerFormSection h2, #partnerListSection h2 {
+    margin-top: 0;
+    color: var(--color-primary);
+}
+
+#partnerFormSection form label, #partnerListSection ul {
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+#partnerFormSection form input[type="text"],
+#partnerFormSection form textarea {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-entry-border);
+    border-radius: 5px;
+}
+
+#partnerFormSection form button {
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#partnerListSection ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#partnerListSection ul li {
+    background-color: var(--color-light);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--color-dark);
+}
+
+footer{
+    color: #d9f7e3;
+    text-align: center;
+}

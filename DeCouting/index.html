@@ -8,6 +8,17 @@
     <link rel="shortcut icon" href="assets/decounting-high-resolution-logo.png" type="image/x-icon">
 </head>
 <body>
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <form id="nameForm">
+                <h1>Bem vindo ao DeCouting!</h1>
+                <label for="userName">Digite seu nome:</label>
+                <input type="text" id="userName" name="userName" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <header>
         <div class="headerClass">
             <img src="assets/decounting-high-resolution-logo-white-transparent.png" class="logo">
@@ -16,15 +27,15 @@
         <div class="infoUser">
             <div class="left-section">
                 <div class="info-item">
-                    <div class="info-label">USER: <span class="ValuesInfoUser">Deividy</span></div>
+                    <span class="info-label">USER: <span class="ValuesInfoUser" id="userSpan"></span></span>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">DEBITO TOTAL DE HOJE: <span class="ValuesInfoUser">R$ 15.000</span></div>
+                    <div class="info-label">DEBITO TOTAL DE HOJE: <span class="ValuesInfoUser" id="totalToday">R$ 0</span></div>
                 </div>
             </div>
             <div class="right-section">
                 <div class="info-item">
-                    <div class="info-label">DEBITO TOTAL DO MÊS: <span class="ValuesInfoUser">R$ 50.000</span></div>
+                    <div class="info-label">DEBITO TOTAL DO MÊS: <span class="ValuesInfoUser" id="totaltoday">R$ 0</span></div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">DATA FILTRADA: <span class="ValuesInfoUser">01/04 - 21/04</span></div>
@@ -46,7 +57,6 @@
         <div id="entriesContainer"></div>
         <button class="navbutton" id="navbutton">+</button>
     </main>
-
 
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -78,7 +88,10 @@
             </form>
         </div>
     </div>
+    
+    <p class="footer">&copy;2024 DeCounting. Todos os direitos reservados.</p>
 
     <script src="main.js"></script>
 </body>
 </html>
+

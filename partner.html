@@ -1,0 +1,44 @@
+<!-- partners.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Parceiros - DeCounting</title>
+    <link rel="stylesheet" href="stylePartner.css">
+    <link rel="stylesheet" href="partners.css">
+    <link rel="shortcut icon" href="assets/decounting-high-resolution-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="headerClass">
+            <img src="DeCouting/assets/decounting-high-resolution-logo-white-transparent.png" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <h1>Gerenciar Parceiros</h1>
+        <section id="partnerFormSection">
+            <h2>Adicionar Parceiro</h2>
+            <form id="partnerForm">
+                <label for="partnerName">ID do parceiro:</label>
+                <input type="text" id="partnerName" name="partnerName" required>
+                <button type="submit">Adicionar Parceiro</button>
+                <button type="submitqr">Ler QR CODE</button>
+            </form>
+        </section>
+
+        <section id="partnerListSection">
+            <h2>Lista de Parceiros</h2>
+            <ul id="partnerList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DeCounting. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="partners.js"></script>
+</body>
+</html>

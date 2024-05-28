@@ -92,40 +92,53 @@ header {
 
 main {
     flex: 1;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
     background-color: var(--color-light);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .entry {
-    background-color: var(--color-light);
+    background-color: var(--color-modal-bg);
     border-left: 5px solid var(--color-primary);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Esticar para ocupar todo o espaço vertical disponível */
+}
+
+#entriesContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Esticar os itens para preencher o espaço vertical */
+    justify-content: flex-start; /* Alinhar os itens no início do container */
+    overflow-y: auto;
 }
 
 .entry h3 {
     margin-bottom: 10px;
     color: var(--color-primary);
+    font-size: 22px; /* Aumentando o tamanho da fonte do título */
 }
 
 .entry p {
     margin-bottom: 5px;
+    font-size: 18px; /* Ajustando o tamanho da fonte dos parágrafos */
 }
 
 .entry-details {
     margin-top: 10px;
     color: var(--color-dark);
+    font-size: 16px; /* Reduzindo o tamanho da fonte dos detalhes */
 }
 
-.entry-details p {
-    margin: 5px 0;
-}
 
 .navbutton {
     position: fixed;
@@ -223,7 +236,6 @@ footer {
         margin-left: 0;
         margin-right: 20px;
     }
-
     .infoUser {
         width: auto;
         max-width: 90%;
@@ -267,6 +279,7 @@ footer {
     position: relative;
     padding: 20px;
     color: var(--color-dark);
+    text-align: center;
 }
 
 form {
@@ -321,4 +334,9 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--color-submit-hover);
+}
+
+.footer{
+    color: #d9f7e3;
+    text-align: center;
 }
